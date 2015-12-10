@@ -11,7 +11,7 @@ Usage
 ==================
 Define your Bookshelf models and their relationships.  Pass an object to the jsonapi middleware that contains 'resourceName' => 'modelReference'.  This should allow your application to serve jsonapi compatible rest services with very little setup.
 ```JavaScript
-var jsonapi = require('jsonapi-bookshelf');
+var jsonapi = require('bookshelf-jsonapi');
 var models = require('./models'); // key model name, value model object
 
 app.use('/api', jsonapi(models));
